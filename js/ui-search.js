@@ -32,7 +32,7 @@ function toggleAppearance () {
 searchButton.onclick= searchFor
 
 magnifier.onclick = toggleAppearance;
-document.onkeypress = function(evt) {
+inputZone.onkeypress = function(evt) {
     evt = evt || window.event;
     var charCode = evt.keyCode || evt.which;
     if (charCode == 13)
@@ -40,7 +40,7 @@ document.onkeypress = function(evt) {
 };
 
 function searchFor() {
-    console.log ('You are looking for',inputZone.value )
+    console.log ('You are looking for', inputZone.value )
     // resetting screen
     toggleAppearance();
     inputZone.value ="";

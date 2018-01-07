@@ -13,7 +13,7 @@ It is all basic web :
 So you can clone the directory and open in your browser index.html
 
 ## Our UI's
-### Form Input improved ui-input
+### Form Input improved (ui-input)
 Form input UI allows to :
 - Always have the label visible
 - if no entry, make the label highly visible 
@@ -22,7 +22,7 @@ Form input UI allows to :
 files:
 - index.html, ui-input.js, ui-input.css
 
-### search Box ui-search
+### search Box (ui-search)
 Search Box allows to:
 - see the what is important
 - make appearing the search input by clicking on an icon (e.g. magnifier)
@@ -32,6 +32,14 @@ files:
 
     index.html, ui-search.js, ui-search.css
 
+### Selection Process (ui-selection-process)
+The users need to select an item and could have many criterii.
+Example : Trousers > Women > blue
+This UI allows the user to select using input list and autocompletion.
+___________________________
+! Trousers > Women > blue !
+
+### Highlighting an input when focus
 
 ## Contributing
 
