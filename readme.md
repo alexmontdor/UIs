@@ -28,6 +28,10 @@ Search Box allows to:
 - make appearing the search input by clicking on an icon (e.g. magnifier)
 - launch the search (if enter is pressed or an icon is clicked)
 
+files:
+
+    index.html, ui-search.js, ui-search.css
+
 
 ## Contributing
 
