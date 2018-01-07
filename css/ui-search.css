@@ -38,7 +38,8 @@
     width : 100px;
     left: -80px;
     /*overflow-x: hidden;*/
-
+    -webkit-transition: left 2s;
+    transition: left 2s;
 }
 
 .open > .ui-search-appearance{
