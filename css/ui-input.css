@@ -42,6 +42,7 @@
 .has-value+ .ui-input-label{
     font-size: 14px;
     line-height: 20px;
+    color: grey;
 }
 
 .ui-input-label {

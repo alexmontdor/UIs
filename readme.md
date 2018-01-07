@@ -14,8 +14,17 @@ So you can clone the directory and open in your browser index.html
 
 ## Our UI's
 ### Form Input improved
+Form input UI allows to :
+- Always have the label visible
+- if no entry, make the label highly visible 
+- if entry, make the entry highly visible
+
+files:
+- index.html, ui-input.js, ui-input.css
 
 ### search Box
+
+
 
 ## Contributing
 
