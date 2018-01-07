@@ -52,7 +52,6 @@ function searchFor() {
  */
 function checkScreenOverflow () {
     uiSearch.removeEventListener(transitionEvent, checkScreenOverflow)
-    console.log ("left pos", uiSearch.offsetLeft )
     if (uiSearch.offsetLeft < 0) {
         uiSearch.style.left = "0px"; 
     }
@@ -78,7 +77,6 @@ function whichTransitionEvent(){
   
     for (t in transitions){
       if (uiSearch.style[t] !== undefined){
-        //  console.log (transitions[t])
         return transitions[t];
       }
     }
