@@ -1,0 +1,64 @@
+.zone-button {
+    display: flex;
+}
+
+.ui-zone {
+    flex: .3;
+    position: relative;
+    align-content: space-between;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.ui-input {
+    width: 150px;
+    margin:20px 20px 5px 5px;
+    color: black;   
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+    background: none;
+    font-weight: bold;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.ui-input:focus{
+    font-size: 14px;
+    border:1px solid;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+.ui-input:focus + .ui-input-label{
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+.has-value+ .ui-input-label{
+    font-size: 14px;
+    line-height: 20px;
+    color: grey;
+}
+
+.ui-input-label {
+    position: absolute;
+    top: 0 px;
+    left: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    -webkit-transition: line-height .2s;
+    transition: line-height .2s;
+    
+}
+
+.info {
+    float: left;
+    color: blue;
+    font-size: 20px;
+    margin: 10px;
+}
