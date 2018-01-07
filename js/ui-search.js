@@ -4,16 +4,23 @@
 var magnifier = document.getElementById('magnifier');
 var searchButton = document.getElementById('search-button');
 var inputZone = document.getElementById('input-zone');
+var uiSearch = document.getElementById('ui-search');
+var transitionEvent = whichTransitionEvent();
 /**
  *  Display the Menu
  */
 
 function toggleAppearance () {
-    var uiSearch = document.getElementById('ui-search');
-    if (uiSearch.classList.contains('open'))
-        uiSearch.classList.remove('open');
-    else
-        uiSearch.classList.add('open');
+    if (uiSearch.classList.contains('open')){
+        uiSearch.classList.remove('open')
+
+    }
+    else {
+        var fnc = uiSearch.classList.add('open');
+        uiSearch.style.left = ""; 
+        uiSearch.addEventListener(transitionEvent, checkScreenOverflow,false)
+
+    }
 }
 
 /**
@@ -37,3 +44,41 @@ function searchFor() {
     toggleAppearance();
     inputZone.value ="";
 }
+
+/**
+ * If search area Screen Overflow
+ * result: repositionned
+ */
+function checkScreenOverflow () {
+    uiSearch.removeEventListener(transitionEvent, checkScreenOverflow)
+    console.log ("left pos", uiSearch.offsetLeft )
+    if (uiSearch.offsetLeft < 0) {
+        uiSearch.style.left = "0px"; 
+    }
+    else {
+        uiSearch.style.left = ""; 
+    }
+}
+
+/**
+ * Determine the type of transition
+ * Code from https://jonsuh.com/blog/detect-the-end-of-css-animations-and-transitions-with-javascript/
+ */
+
+function whichTransitionEvent(){
+    var t
+  
+    var transitions = {
+      "transition"      : "transitionend",
+      "OTransition"     : "oTransitionEnd",
+      "MozTransition"   : "transitionend",
+      "WebkitTransition": "webkitTransitionEnd"
+    }
+  
+    for (t in transitions){
+      if (uiSearch.style[t] !== undefined){
+        //  console.log (transitions[t])
+        return transitions[t];
+      }
+    }
+  }

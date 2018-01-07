@@ -29,7 +29,7 @@
 }
 
 .ui-search-input-box {
-    width: 60px;
+    width: 100px;
 }
 
 .ui-search-button {
@@ -39,16 +39,15 @@
 
 .open {
     border: 1px solid;
-    width : 100px;
-    left: -80px;
-    height: 28px;
-    -webkit-transition: left 2s, width 2s;
-    transition: left 2s, width 2s;
+    border-radius: 5px;
     overflow: hidden;
     white-space: nowrap;
+    width : 140px;
+    left: -120px;
+    -webkit-transition: left 2s, width 2s;
+    transition: left 2s, width 2s;
 }
 
 .open > .ui-search-appearance{
     display: inline-block;
-
 }
