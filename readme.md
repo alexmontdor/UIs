@@ -13,7 +13,7 @@ It is all basic web :
 So you can clone the directory and open in your browser index.html
 
 ## Our UI's
-### Form Input improved
+### Form Input improved ui-input
 Form input UI allows to :
 - Always have the label visible
 - if no entry, make the label highly visible 
@@ -22,8 +22,11 @@ Form input UI allows to :
 files:
 - index.html, ui-input.js, ui-input.css
 
-### search Box
-
+### search Box ui-search
+Search Box allows to:
+- see the what is important
+- make appearing the search input by clicking on an icon (e.g. magnifier)
+- launch the search (if enter is pressed or an icon is clicked)
 
 
 ## Contributing
