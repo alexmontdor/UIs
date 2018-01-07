@@ -1,3 +1,6 @@
+/**
+ * S
+ */
 var magnifier = document.getElementById('magnifier');
 magnifier.onclick = toggleAppearance;
 
