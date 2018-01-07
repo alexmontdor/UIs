@@ -44,8 +44,8 @@
     white-space: nowrap;
     width : 140px;
     left: -120px;
-    -webkit-transition: left 2s, width 2s;
-    transition: left 2s, width 2s;
+    -webkit-transition: left .4s, width .4s;
+    transition: left .4s, width .4s;
 }
 
 .open > .ui-search-appearance{

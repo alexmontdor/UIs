@@ -17,6 +17,7 @@ function toggleAppearance () {
     }
     else {
         var fnc = uiSearch.classList.add('open');
+        // Action to avoid the animation to go outside the screen
         uiSearch.style.left = ""; 
         uiSearch.addEventListener(transitionEvent, checkScreenOverflow,false)
 
