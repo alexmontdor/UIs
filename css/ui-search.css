@@ -8,13 +8,13 @@
     position:relative;
     vertical-align: top;
     background-color: white;
+    padding: 3px;
 }
 
 .ui-search-magnifier {
     display:inline-block;
-    position: absolute;
-    top: 0;
-    right: -20px;
+    position: relative;
+    
 }
 
 .ui-search-appearance {
@@ -38,6 +38,7 @@
     width : 100px;
     left: -80px;
     /*overflow-x: hidden;*/
+
 }
 
 .open > .ui-search-appearance{
