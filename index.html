@@ -3,6 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <link rel="stylesheet" href="css/ui-input.css">
+    <link rel="stylesheet" href="css/ui-search.css">
 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
@@ -11,7 +12,6 @@
 <body>
     <h1>Input improved Exemple "ui-input"</h1>
     <div class="zone-button">
-
         <div class='ui-zone'>
             <div class="info">
                 <i class="fa fa-question-circle"></i>
@@ -27,7 +27,26 @@
             <label class="ui-input-label">Random text :</label>
         </div>
     </div>
+    <h1>Search zone - "ui-input"</h1>
+    <div class="search-zone">
+        <div class='important-text'>this !</div>
+        <div class="ui-search" id='ui-search'>
+            <div class="ui-search-magnifier" id='magnifier'>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="ui-search-appearance">
+                <div class="ui-search-input">
+                    <input type="text" class="ui-search-input-box" placeholder='What can I search mm?' id='input-zone'>
+                </div>
+                <div class="ui-search-button" id='search-button'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
 <script type="text/javascript" src="js/ui-input.js"></script>
+<script type="text/javascript" src="js/ui-search.js"></script>
