@@ -1,0 +1,46 @@
+.important-text {
+    display:inline-block;
+    font-weight: bold;
+}
+
+.ui-search {
+    display:inline-block;
+    position:relative;
+    vertical-align: top;
+    background-color: white;
+}
+
+.ui-search-magnifier {
+    display:inline-block;
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+.ui-search-appearance {
+    display:none;
+    position :relative
+}
+.ui-search-input {
+    display:inline-block;
+}
+
+.ui-search-input-box {
+    width: 60px;
+}
+
+.ui-search-button {
+    display: inline-block;
+
+}
+
+.open {
+    width : 100px;
+    left: -80px;
+    /*overflow-x: hidden;*/
+}
+
+.open > .ui-search-appearance{
+    display: inline-block;
+
+}
