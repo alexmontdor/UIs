@@ -20,6 +20,8 @@
     border: none;
     background: none;
     font-weight: bold;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
 }
 
 .ui-input:focus{
@@ -28,12 +30,14 @@
     border-radius: 5px;
     background-color: grey;
     color: white;
-    /* transition: */
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
 }
 
 .ui-input:focus + .ui-input-label{
     font-size: 14px;
     line-height: 20px;
+    
 }
 .has-value+ .ui-input-label{
     font-size: 14px;
@@ -46,7 +50,8 @@
     left: 50px;
     font-size: 14px;
     line-height: 50px;
-
+    -webkit-transition: line-height .2s;
+    transition: line-height .2s;
     
 }
 
