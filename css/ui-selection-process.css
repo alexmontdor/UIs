@@ -1,0 +1,46 @@
+.ui-selection-process {
+    width: 200px;
+    border:1px solid;
+    border-radius:5px;  
+    white-space: nowrap;
+}
+
+.ui-selection-process-choice { 
+    position : relative; 
+    display: inline-block;
+}
+.ui-selection-process-type { 
+    position:relative;
+    background: lightseagreen; 
+    padding:5px;
+    padding-right: 7px;
+
+}
+.ui-selection-process-arrow { 
+    background: lightseagreen;
+    position: absolute;
+    right: -6px;
+    transform: rotate(45deg);
+    padding: 5px;
+    width: 9px;
+    height: 8px;
+    top: 4px;
+    z-index: 999;
+    border-top: 1px white solid;
+    border-right: 1px white solid;
+}
+.fa-times { 
+    position: absolute;
+    right:0 ;
+    color: white;
+}
+.ui-selection-process-input {
+    position: relative;
+    line-height: 21px;
+}
+
+.ui-selection-process-other-choice { padding-left: 15px; }
+
+#cloth-type { color : white}
+#gender-type {color: white; }
+#color-type { color: white;}

@@ -4,6 +4,7 @@
 
     <link rel="stylesheet" href="css/ui-input.css">
     <link rel="stylesheet" href="css/ui-search.css">
+    <link rel="stylesheet" href="css/ui-selection-process.css">
 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
@@ -46,7 +47,41 @@
         </div>
     </div>
 
+    <h1>Selection Process - "ui-selection-process"</h1>
+    <div class="selection-zone">
+        <div class='important-text'>Type something</div>
+        <div class="ui-selection-process">
+            <i class="fa fa-female" aria-hidden="true"></i>
+            <input id='input-step-1' type="text"  class="ui-selection-process-input" placeholder="Choose a cloth type (EN)">
+            <div class="ui-selection-process-choice" id ='arrow-1' style='display:none'>
+                <span  class="ui-selection-process-type">
+                    <div class="ui-selection-process-arrow"></div>
+                    <span id="type-1">Trouser</span>
+                    
+                   
+                   <i class="fa fa-times"></i>
+                </span>
+            </div>
+            <input  id='input-step-2' type="text"  class="ui-selection-process-input ui-selection-process-other-choice" placeholder="Choose women or men" style='display:none' >
+            <div class="ui-selection-process-choice" id ='arrow-2' style='display:none'>
+                <span class="ui-selection-process-type">
+                    <div class="ui-selection-process-arrow"></div> 
+                    <span id="type-2"></span>
+                    <i class="fa fa-times"></i>
+                </span>
+            </div>
+            <input type="text" id='input-step-3' class="ui-selection-process-input ui-selection-process-other-choice" placeholder="choose a color" style='display:none'>
+            <div class="ui-selection-process-choice" id ='arrow-3' style='display:none'>
+                <span class="ui-selection-process-type">
+                    <div class="ui-selection-process-arrow"></div>
+                    <span id="type-3"></span>
+                    <i class="fa fa-times"></i>
+                </span>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script type="text/javascript" src="js/ui-input.js"></script>
 <script type="text/javascript" src="js/ui-search.js"></script>
+<script type="text/javascript" src="js/ui-selection-process.js"></script>
